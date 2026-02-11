@@ -18,16 +18,17 @@ y = np.c_[country_stats["Life satisfaction"]]
 
 #Visualize os dados
 country_stats.plot(kind='scatter', x="GDP per capita", y='Life satisfaction')
-plt.show()
+#plt.show()
 
 #Selecione um modelo linear
-#model = sklearn.linear_model.LinearRegression()
+model = sklearn.linear_model.LinearRegression()
 
 #Treine o modelo
-#model.fit(X,y)
+model.fit(X,y)
 
 #Faça uma predição para o Cyprus
-#X_new = [[22587]] #Cyprus' GDP per capita
-#print(model.predict(X_new)) # outputs [[5.96242338]]
+X_new = [[22587]] #Cyprus' GDP per capita
+print(model.predict(X_new)) # outputs [[5.96242338]]
 
+print("Finalizou")
 
