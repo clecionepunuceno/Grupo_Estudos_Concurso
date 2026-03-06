@@ -1,4 +1,5 @@
 
-from sklearn.datasets import fetch_mldata
-mnist = fetch_mldata('MNIST original')
+from sklearn.datasets import fetch_openml
+mnist = fetch_openml('mnist_784')
 mnist
+

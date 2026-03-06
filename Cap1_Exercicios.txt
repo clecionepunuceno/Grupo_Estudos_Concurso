@@ -1,0 +1,57 @@
+Exercios Cap 1 
+
+1. Como você definiria o Aprendizado de Máquina?
+
+A definição mais formal de Aprendizado de Máquina, é que um programa de computador aprende a partir de uma experiência E em relação auma tarefa T em uma medida de desempenho P , se o seu desempenho na tarefa T, medido por P, melhorar com a experiência E.
+
+Então, o AM é fazer um programa de computador onde ele possa aprender com uma base de dados, de tal forma que um desempenho a ser alcançada a partir de desse aprendizado, tenha sucesso.  
+
+2 . Quatro tipos de problemas nos quais o AM se destaca:
+
+	a. Problemas que envolvem grandes quantidades de variáveis, como o problema do filtro de spam. Se o filtro de spam fosse construido como um programa normal, seria necessário a todo momento incluir novos valores para o filtro funcionar. Mas com ML não precisa, pois o programa aprende a partir dos novos dados que são lidos.
+	b. Problemas complexos que não é possível programar. Por exemplo, qual tipo de programação tradicional seria possível utilizar para reconhecer a voz de uma pessoa, if-else? Não é possível, não é mesmo? Então, o ML se encaixa muito bem neste tipo de problema.
+	c. Ambientes flutuantes onde os dados mudam o tempo todo. O preço das ações mudam o tempo todo, seria impossivel alterar manualmente todas as regras que formam o preço.
+	d. Ambientes onde é necessário aprender padrões que o ser humano não sabia que existia. Correlações a partir de milhões de dados existentes, onde, para o ser humano seria impossivel detectar algum padrão.
+
+3. O que é um conjunto de treinamento rotulado?
+
+Um conjunto de treinamento rotulado, é uma parte da base de dados que é separada com a resposta da tarefa a ser executada já definida. Exemplo do filtro de spam, o rotulo é a parte da base onde cada e-mail já vem descrito com a label "é spam" e "não é spam"
+
+4. Quais são as duas tarefas supervisonadas mais comuns?
+	a. Classificação - Prever a qual classe ou categoria o dado pertence. A resposta é discreta: Sim ou Não
+	b. Regressão - Prever um valor númerico. Um valor contínuo
+ 
+5. Você consegue nomear quatro tarefas comuns sem supervisão ?
+	1. Detecção de anomalias
+	2. Regras de associação-descobrir relações interessantes entre atributos
+	3. Redução da dimensionalidade-mesclar várias caracteristicas correlacionadas em uma
+	4. Agrupamento
+
+6. Que tipo de algoritimo de Aprendizado de Máuqina você utilizaria para permitir que um robô ande em vários terrenos desconhecidos?
+
+Como o terreno é desconhecido, utilizaria um algoritimo de aprendizado por reforço, que funciona punindo ou recompensando a medida que o robo avança, assim ele aprende onde deve ou não ir. 
+
+7. Que tipo de algoritimo você utilizaria para segmentar seus clientes em vários grupos?
+
+O melhor algoritimo nesse caso seria de aprendizado não supervisionado, clusterização. 
+
+8. Você enquadraria o problema de detecção de spam como um problema de aprendizado supervisiondo ou sem supervisão?
+
+O problema de detecção de spam é um problema clássico de aprendizado supervisionado, é necessário de rotulos que ensinem a máquina o que é spam ou não.
+
+9. O que é um sistemaa de aprendizado online?
+
+É um sistema que os dados são constantemente carregados, ensinando em tempo real a máquina a partir do algoritimo utilizado para o treinamento. 
+
+10. O que é o out-of-core learning?
+
+É uma tecnica que lida com grandes volumes de dados, onde os dados são fatiados, processados pelo algoritimo de ML e alocado em disco, esse processo é repetido até todo o volume de dados ser lido e processado. 
+
+11. Que tipo de algoritmo de aprendizado depende de uma medida de similaridade para fazer previsões?
+
+Algoritimo baseado em instância - Ele utiliza os vizinhos mais próximos para identificar algum elemento.
+
+12. Qual a diferença entre um parâmetro de modelo e os hiperparâmetro do algoritimo de aprendizado?
+
+Os parâmetros do modelo são encontrados a partir do processamento dos dados de treinamento. Os hiperparâmetros do algoritimo são ajustados automaticamente pelo processamento do algoritimo.  
+ 
